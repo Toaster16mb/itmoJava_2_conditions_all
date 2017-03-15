@@ -40,6 +40,16 @@ public class Main {
     }
 
     static void task4() {
-
+        int iFrom, iTo, rFrom, rTo, rnd;
+        rFrom = 5;
+        rTo = 155;
+        iFrom = 25;
+        iTo = 100;
+        rnd = rFrom + (int)(Math.random() * ((rTo - rFrom) + 1));
+        if (rnd > iFrom && rnd < iTo) {
+            System.out.println("Число " + rnd + " из отрезка [" + rFrom + ";" + rTo + "] содержится в интервале (" + iFrom + "," + iTo + ")");
+        } else {
+            System.out.println("Число " + rnd + " из отрезка [" + rFrom + ";" + rTo + "] не содержится в интервале (" + iFrom + "," + iTo + ")" );
+        }
     }
 }
