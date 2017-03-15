@@ -105,9 +105,9 @@ public class Main {
         int counter;
         counter = 1000;
         System.out.println();
-        while (counter < 10000) {
+        while (counter < 9999) {
             counter += 3;
-            System.out.print(counter + " ");
+            if (counter < 9999) System.out.print(counter + " ");
             if (counter % 10 == 0)
                 System.out.println();
         }
